@@ -4,21 +4,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Prompt Durağı</title>
-    <link rel="stylesheet" href="style.css" />
-    <!-- Tailwind CDN (development only) -->
     <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body class="antialiased bg-slate-50">
-    <div id="root"></div>
-
-    <!-- React 18 UMD (development) -->
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-
-    <!-- Babel Standalone -->
+    <link rel="stylesheet" href="style.css" />
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-
-    <!-- App (pure JSX/JS, no TS types) -->
-    <script src="script.js" type="text/babel" data-presets="react"></script>
+  </head>
+  <body class="bg-slate-50">
+    <div id="root"></div>
+    <script type="text/babel" data-type="module" src="script.js"></script>
   </body>
 </html>
