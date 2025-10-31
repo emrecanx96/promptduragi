@@ -1,2 +1,2 @@
-/* Optional extra tweaks beyond Tailwind */
+/* Tailwind kullanılıyor; istersen ek stilleri burada tutabilirsin. */
 html, body { height: 100%; }
